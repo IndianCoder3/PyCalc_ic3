@@ -75,8 +75,8 @@ Contributions are welcome! If you’d like to contribute:
 ---
 
 ## Contact
-- **Publisher**: ARP.Poorvi  
-- **Email**: [arp.poorvi@hotmail.com](mailto:arp.poorvi@hotmail.com)
+- **Publisher**: IndianCoder3 (published first via ARP1Poorvi account.)
+- **Email**: [indiancoder3@hotmail.com](mailto:indiancoder3@hotmail.com)
 
 ---
 
