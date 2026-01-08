@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>IndianCoder3 | PyCalc</title>
+
+<meta name="description"
+      content="PyCalc is a lightweight desktop calculator built using Python and Tkinter by IndianCoder3. Available for Linux and Windows." />
+
+<style>
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ================= NAV ================= */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #1a1a2e;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.brand {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.brand span {
+  color: #f5c518;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#themeToggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #f5c518;
+}
+
+/* ================= HERO ================= */
+.hero2 {
+  height: 55vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #3b82f6, #60a5fa);
+  color: white;
+  text-align: center;
+}
+
+.hero2 h1 {
+  font-size: 2.6em;
+}
+
+.hero2 p {
+  max-width: 700px;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+/* ================= SECTIONS ================= */
+.projects2 {
+  padding: 50px;
+  text-align: left;
+}
+
+.projects2 h2 {
+  font-size: 2.1em;
+  margin-bottom: 20px;
+}
+
+/* ================= CARDS ================= */
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.25);
+}
+
+/* ================= FOOTER ================= */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a1a2e;
+  color: white;
+}
+
+/* ================= BACK TO TOP ================= */
+#backToTop {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background-color: #1a1a2e;
+  color: #f5c518;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+/* ================= DARK MODE ================= */
+body.dark {
+  background-color: #0f1220;
+  color: #eaeaf0;
+}
+
+body.dark nav,
+body.dark footer {
+  background-color: #0c0f1a;
+}
+
+body.dark .hero2 {
+  background: linear-gradient(120deg, #1e3a8a, #2563eb);
+}
+
+body.dark .card {
+  background-color: #1a1d2e;
+  color: #eaeaf0;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="brand">
+    PyCalc <span>by IndianCoder3</span>
+  </div>
+
+  <div class="nav-right">
+    <button id="themeToggle">🌙</button>
+  </div>
+</nav>
+
+<button id="backToTop">↑</button>
+
+<section class="hero2">
+  <h1>PyCalc</h1>
+  <p>
+    A lightweight desktop calculator application
+    built using Python and Tkinter.
+    <br />
+    Simple. Offline. No distractions.
+  </p>
+</section>
+
+<section class="projects2">
+  <h2 style="text-align:center;">🧠 What is PyCalc?</h2>
+  <p style="max-width:900px; margin:auto; text-align:center;">
+    <strong>PyCalc</strong> is a simple desktop calculator designed
+    to demonstrate how real applications can be built and packaged
+    using Python.
+    <br><br>
+    It focuses on clarity, usability, and learning —
+    not bloated features or ads.
+  </p>
+
+  <h2 style="text-align:center; margin-top:50px;">✨ Features</h2>
+
+  <div class="project-cards">
+    <article class="card">
+      <p>
+        • Clean Tkinter GUI<br>
+        • Basic arithmetic operations<br>
+        • Real-time input display
+      </p>
+    </article>
+
+    <article class="card">
+      <p>
+        • Built fully in Python<br>
+        • No internet required<br>
+        • Beginner-friendly codebase
+      </p>
+    </article>
+
+    <article class="card">
+      <p>
+        • Packaged as a real app<br>
+        • Linux (.deb) support<br>
+        • Windows (.exe) support
+      </p>
+    </article>
+  </div>
+
+  <h2 style="text-align:center; margin-top:50px;">🎯 Project Goals</h2>
+
+  <div class="project-cards">
+    <article class="card">
+      <p>
+        • Learn Python GUI development<br>
+        • Understand event handling<br>
+        • Design user-friendly layouts
+      </p>
+    </article>
+
+    <article class="card">
+      <p>
+        • App packaging & distribution<br>
+        • Desktop deployment basics<br>
+        • Cross-platform mindset
+      </p>
+    </article>
+  </div>
+
+  <h2 style="text-align:center; margin-top:50px;">📦 Downloads & Source</h2>
+
+  <div class="project-cards">
+    <article class="card">
+      <p>
+        • Open-source on GitHub<br>
+        • Free to use & modify<br>
+        • Educational purpose
+      </p>
+      <br>
+      <a href="https://github.com/IndianCoder3/PyCalc_ic3" target="_blank">
+        🔗 View Repository
+      </a>
+    </article>
+
+    <article class="card">
+      <p>
+        Available builds:<br>
+        • Linux (.deb)<br>
+        • Windows (.exe)<br>
+        Check releases for downloads
+      </p>
+    </article>
+  </div>
+</section>
+
+<footer>
+  © 2025–2026 Abhinu Gupta (IndianCoder3)
+</footer>
+
+<script>
+const toggle = document.getElementById("themeToggle");
+const body = document.body;
+const backToTop = document.getElementById("backToTop");
+
+if (localStorage.getItem("theme") === "dark") {
+  body.classList.add("dark");
+  toggle.textContent = "☀️";
+}
+
+toggle.onclick = () => {
+  body.classList.toggle("dark");
+  toggle.textContent = body.classList.contains("dark") ? "☀️" : "🌙";
+  localStorage.setItem("theme", body.classList.contains("dark") ? "dark" : "light");
+};
+
+window.addEventListener("scroll", () => {
+  backToTop.style.display = window.scrollY > 400 ? "block" : "none";
+});
+
+backToTop.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+</script>
+
+</body>
+</html>
